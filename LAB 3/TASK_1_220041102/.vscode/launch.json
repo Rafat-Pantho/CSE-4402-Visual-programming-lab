@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "jdkPath": "${env:JAVA_HOME}/bin/java",
+            "startupClass": "${fileBasename}.java",
+            "cwd": "${fileDirname}",
+            "type": "java",
+            "name": "220041102_task_1$",
+            "request": "launch",
+            "mainClass": "Main",
+            "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
