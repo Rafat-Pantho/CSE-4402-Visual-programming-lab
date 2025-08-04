@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.id_220041102_lab5.MovieDetailsController">
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+            <Label fx:id="titleLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+            <ImageView fx:id="posterImageView" fitHeight="300" fitWidth="200" />
+            <Label fx:id="genreLabel" />
+            <Label fx:id="castLabel" />
+            <Label fx:id="durationLabel" />
+            <Label fx:id="ratingLabel" />
+            <Label fx:id="summaryLabel" wrapText="true" />
+            <Button fx:id="watchLaterButton" onAction="#toggleWatchLater" />
+        </VBox>
+    </children>
+</AnchorPane>

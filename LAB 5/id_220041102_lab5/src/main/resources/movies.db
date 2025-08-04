@@ -1,0 +1,35 @@
+-- Create the movies table
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    genre TEXT,
+    cast TEXT,
+    duration TEXT,
+    rating REAL,
+    summary TEXT
+);
+
+-- Insert 22 sample movies
+INSERT INTO movies (id, title, genre, cast, duration, rating, summary) VALUES
+(1, 'Inception', 'Sci-Fi', 'Leonardo DiCaprio, Joseph Gordon-Levitt', '2h 28m', 8.8, 'A thief steals corporate secrets through dream-sharing technology.'),
+(2, 'The Dark Knight', 'Action', 'Christian Bale, Heath Ledger', '2h 32m', 9.0, 'Batman faces the Joker in a battle for Gotham.'),
+(3, 'The Matrix', 'Sci-Fi', 'Keanu Reeves, Laurence Fishburne', '2h 16m', 8.7, 'A hacker discovers the world is a simulation.'),
+(4, 'Pulp Fiction', 'Crime', 'John Travolta, Uma Thurman', '2h 34m', 8.9, 'Intertwined stories of crime and redemption.'),
+(5, 'The Godfather', 'Crime', 'Marlon Brando, Al Pacino', '2h 55m', 9.2, 'The aging patriarch of a crime family transfers control to his son.'),
+(6, 'Forrest Gump', 'Drama', 'Tom Hanks, Robin Wright', '2h 22m', 8.8, 'The life story of a simple man with a big heart.'),
+(7, 'Interstellar', 'Sci-Fi', 'Matthew McConaughey, Anne Hathaway', '2h 49m', 8.6, 'Astronauts travel through a wormhole to find a new home for humanity.'),
+(8, 'Fight Club', 'Drama', 'Brad Pitt, Edward Norton', '2h 19m', 8.8, 'An office worker forms an underground fight club.'),
+(9, 'The Shawshank Redemption', 'Drama', 'Tim Robbins, Morgan Freeman', '2h 22m', 9.3, 'Two imprisoned men bond over a number of years.'),
+(10, 'Gladiator', 'Action', 'Russell Crowe, Joaquin Phoenix', '2h 35m', 8.5, 'A former Roman General seeks revenge.'),
+(11, 'The Avengers', 'Action', 'Robert Downey Jr., Chris Evans', '2h 23m', 8.0, 'Superheroes team up to save the world.'),
+(12, 'Titanic', 'Romance', 'Leonardo DiCaprio, Kate Winslet', '3h 14m', 7.9, 'A romance blossoms aboard the ill-fated Titanic.'),
+(13, 'Avatar', 'Sci-Fi', 'Sam Worthington, Zoe Saldana', '2h 42m', 7.8, 'A marine on an alien planet becomes one of them.'),
+(14, 'The Lion King', 'Animation', 'Matthew Broderick, Jeremy Irons', '1h 28m', 8.5, 'A lion cub must reclaim his kingdom.'),
+(15, 'Jurassic Park', 'Adventure', 'Sam Neill, Laura Dern', '2h 7m', 8.1, 'Dinosaurs run amok in a theme park.'),
+(16, 'The Silence of the Lambs', 'Thriller', 'Jodie Foster, Anthony Hopkins', '1h 58m', 8.6, 'An FBI trainee consults a serial killer.'),
+(17, 'The Departed', 'Crime', 'Leonardo DiCaprio, Matt Damon', '2h 31m', 8.5, 'An undercover cop and a mole try to identify each other.'),
+(18, 'Whiplash', 'Drama', 'Miles Teller, J.K. Simmons', '1h 47m', 8.5, 'A young drummer is pushed to his limits by his instructor.'),
+(19, 'The Social Network', 'Drama', 'Jesse Eisenberg, Andrew Garfield', '2h', 7.7, 'The rise of Facebook and its founder.'),
+(20, 'The Grand Budapest Hotel', 'Comedy', 'Ralph Fiennes, Tony Revolori', '1h 39m', 8.1, 'The adventures of a legendary concierge.'),
+(21, 'Mad Max: Fury Road', 'Action', 'Tom Hardy, Charlize Theron', '2h', 8.1, 'In a post-apocalyptic world, rebels fight tyranny.'),
+(22, 'Coco', 'Animation', 'Anthony Gonzalez, Gael García Bernal', '1h 45m', 8.4, 'A boy embarks on a journey in the Land of the Dead.');

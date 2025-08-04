@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="movieCardRoot"
+      alignment="CENTER"
+      onMouseClicked="#openMovieDetail"
+      spacing="8"
+      prefWidth="160"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.moviebrowser.MovieCardController"
+      styleClass="movie-card">
+
+    <children>
+        <ImageView fx:id="posterImageView"
+                   fitHeight="225"
+                   fitWidth="150"
+                   preserveRatio="true"
+                   styleClass="poster-image" />
+
+        <Label fx:id="titleLabel"
+               alignment="CENTER"
+               maxWidth="150"
+               text="Movie Title"
+               textAlignment="CENTER"
+               wrapText="true"
+               styleClass="movie-title">
+            <font>
+                <Font name="System Bold" size="14" />
+            </font>
+        </Label>
+    </children>
+
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10"/>
+    </padding>
+</VBox>

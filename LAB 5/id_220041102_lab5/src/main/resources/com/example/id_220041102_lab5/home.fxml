@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:controller="com.example.id_220041102_lab5.HomeController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="800" prefHeight="600">
+
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="15" right="15" bottom="10" left="15"/>
+            </padding>
+
+            <HBox spacing="10">
+                <TextField fx:id="searchField" promptText="Search movies..." HBox.hgrow="ALWAYS"/>
+                <ComboBox fx:id="genreCombo" prefWidth="150"/>
+                <Button text="Search" onAction="#handleSearch"/>
+                <Button text="Watch Later" onAction="#openWatchLater"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <ListView fx:id="movieListView"
+                  onMouseClicked="#handleMovieClick"
+                  prefHeight="500"
+                  prefWidth="780"/>
+    </center>
+</BorderPane>

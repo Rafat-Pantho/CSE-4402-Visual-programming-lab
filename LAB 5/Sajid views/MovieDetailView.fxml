@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0" styleClass="detail-root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviebrowser.MovieDetailController">
+
+    <!-- Top Header -->
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="1000.0" spacing="10.0" styleClass="detail-header" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backButton" onAction="#handleBack" styleClass="back-button" text="← Back" />
+                <Label styleClass="header-title" text="Movie Details">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+        </HBox>
+    </top>
+
+    <!-- Main Content Section -->
+    <center>
+        <HBox alignment="CENTER_LEFT" spacing="30.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+            </padding>
+            <children>
+
+                <!-- Poster -->
+                <ImageView fx:id="detailPosterImageView" fitHeight="450.0" fitWidth="300.0" preserveRatio="true" styleClass="detail-poster" />
+
+                <!-- Movie Info -->
+                <VBox spacing="12.0">
+                    <children>
+                        <Label fx:id="titleLabel" styleClass="detail-title" text="Movie Title">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Label>
+
+                        <GridPane hgap="10.0" vgap="8.0">
+                            <Label styleClass="label-bold" text="IMDB Rating:" GridPane.rowIndex="0" />
+                            <Label fx:id="ratingLabel" styleClass="label-light" text="8.5" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <Label styleClass="label-bold" text="Duration:" GridPane.rowIndex="1" />
+                            <Label fx:id="durationLabel" styleClass="label-light" text="2h 15m" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                            <Label styleClass="label-bold" text="Cast:" GridPane.rowIndex="2" />
+                            <Label fx:id="castLabel" styleClass="label-light" text="Actor 1, Actor 2, ..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <Label styleClass="label-bold" text="Genre:" GridPane.rowIndex="3" />
+                            <Label fx:id="genreLabel" styleClass="label-light" text="Action, Sci-Fi" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                        </GridPane>
+
+                        <Label styleClass="plot-header" text="Plot Summary:" />
+
+                        <TextArea fx:id="plotSummaryArea" editable="false" prefHeight="200.0" prefWidth="600.0" styleClass="plot-summary" wrapText="true" />
+
+                        <Button fx:id="watchLaterToggleButton" onAction="#handleWatchLaterToggle" styleClass="primary-button" text="Add to Watch Later" />
+                    </children>
+                </VBox>
+
+            </children>
+        </HBox>
+    </center>
+</BorderPane>
