@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.id_220041102_lab6.GameController"
+            stylesheets="@style.css"
+            prefWidth="950" prefHeight="600">
+
+    <!-- Top status bar -->
+    <top>
+        <HBox spacing="20" alignment="CENTER" style="-fx-padding: 10;">
+            <Label text="Battleship Game" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+            <Label fx:id="statusLabel" text="Place your ships..." style="-fx-font-size: 16px;"/>
+        </HBox>
+    </top>
+
+    <!-- Center game grids -->
+    <center>
+        <HBox spacing="50" alignment="CENTER" style="-fx-padding: 20;">
+            <VBox spacing="10" alignment="CENTER">
+                <Label text="Player 1 Grid" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+                <GridPane fx:id="playerGrid" gridLinesVisible="true"/>
+            </VBox>
+            <VBox spacing="10" alignment="CENTER">
+                <Label text="Player 2 Grid" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+                <GridPane fx:id="opponentGrid" gridLinesVisible="true"/>
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- Bottom control buttons -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Rotate Ship" fx:id="rotateButton" onAction="#onRotate"/>
+            <Button text="Start Game" fx:id="startButton" onAction="#onStartGame"/>
+            <Button text="Reset Game" fx:id="resetButton" onAction="#onResetGame"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

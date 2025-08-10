@@ -1,0 +1,26 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #b3e0ff, #e6f7ff);
+}
+
+.button {
+    -fx-background-color: #4da3ff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #1a75ff;
+}
+
+.label {
+    -fx-text-fill: #003366;
+}
+
+.grid-pane {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
