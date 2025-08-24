@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/../../../../setup files/sqlite-tools-win-x64-3500400/sqlite3.exe" dialect="GenericSQL" />
     <file url="PROJECT" dialect="SQLite" />
   </component>
 </project>
